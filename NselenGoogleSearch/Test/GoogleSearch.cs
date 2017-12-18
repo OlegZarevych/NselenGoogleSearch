@@ -15,10 +15,10 @@ namespace NselenGoogleSearch
         public void GoogleSearchText()
         {
             string url = "http://google.com";
-            Selene.Open(url);
+            Selene.GoToUrl(url);
             SeleneElement searchInput = Selene.S("#lst-ib");
             searchInput.SetValue("QA");
-
+            
         }
 
     }

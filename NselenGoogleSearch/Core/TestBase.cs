@@ -3,6 +3,7 @@ using System;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
 using static NSelene.Selene;
+using OpenQA.Selenium.Firefox;
 
 namespace NselenGoogleSearch.Core
 {
@@ -11,7 +12,7 @@ namespace NselenGoogleSearch.Core
         [SetUp]
         public void InitDriver()
         {
-            SetWebDriver(new ChromeDriver());
+            SetWebDriver(new FirefoxDriver());
         }
 
         [TearDown]
